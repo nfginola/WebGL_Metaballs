@@ -3,7 +3,7 @@ Metaballs in GLSL with Raymarching
 
 To build, we need a local webserver.  
 Instructions (with Servez):  
-- Install "Servez" https://github.com/greggman/servez
+- Download and install "Servez" https://github.com/greggman/servez
 - Run the program  
 - Select "WebGL_Metaballs" as the "Folder to Serve"  
 ![Alt text](/servez_folderselect.png?raw=true "Servez Setup")  
