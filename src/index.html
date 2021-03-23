@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Expanded Domain</title>
+</head>
+<body>
+    <main>
+        <h1 style="text-align:center">Animated 3D Metaballs by Nad :)</h1>
+        
+        <h2>Controls</h2>
+        <b>W, A, S, D</b> to Move
+        &emsp;
+        Hold <b>Left Mouse Button (LMB)</b> to Look Around
+        &emsp;
+        <b>E</b> to Ascend (World Up)
+        &emsp;
+        <b>Q</b> to Descend (World Down)
+        <p></p>
+        <b>Hold Shift</b> to Boost Camera Movement Speed
+        <p></p>
+        <input id="resumeanim"  type="button" value="Resume Animation" />
+        <input id="pauseanim" type="button" value="Pause Animation" />
+        &emsp;&emsp;&emsp;
+        Animation Speed Multiplier: 
+        <input id="speedmultiplier" type="range" step="0.1" min="0.5" max="2.0" value="1"/>
+        &emsp;&emsp;
+        Blob count: <span id="blobcount"></span>/30
+        <p></p>
+        You can pause the animation and still move around and even see blob factor changes live! :)
+
+        <div style="position:relative;">
+            <div style="position:absolute; top:1.3%; left:7%;">
+                <b style="font-size:xx-large; color:darkgoldenrod">FPS: <span id="fpscounter"></span></b>
+                </div>
+            <canvas id="canvas1" width="800" height="600" style="z-index:-1"></canvas>
+        </div>
+
+        Blob Factor:
+        <input id="blobfactor" type="range" step="0.1" min="1.0" max="5.0" value="2.5"/>
+        &emsp;&emsp;&emsp;
+        Shadows:
+        <input id="shadowOn" type="checkbox" checked>
+        &emsp;&emsp;&emsp;
+        Phong Diffused:
+        <input id="diffuse" type="checkbox" checked>
+        &emsp;&emsp;&emsp;
+        Show Normals Only:
+        <input id="normalsonly" type="checkbox">
+        <p></p>
+        <input id="addrandomblob"  type="button" value="Add random blob" />
+
+
+        <p></p>
+    </main>
+
+    <footer>
+        <p>Validators: 
+            <a href="http://validator.w3.org/check/referer">HTML5</a>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>
+            <a href="http://validator.w3.org/unicorn/check?ucn_uri=referer&amp;ucn_task=conformance">Unicorn</a>
+            <a href="http://jshint.com/">JSHint</a>
+        </p>
+    </footer>
+
+    <div id="shader-container">
+
+    </div>
+
+    <script type="text/javascript" src="../../lib/webgl-utils.js"></script>
+    <script type="text/javascript" src="../../lib/cuon-matrix.js"></script>
+    <script type="text/javascript" src="../../libs/cuon-utils.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
