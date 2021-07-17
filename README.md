@@ -1,8 +1,6 @@
 # WebGL_Metaballs
 Metaballs in GLSL with Raymarching
-
-Live version: http://www.student.bth.se/~nagi18/dbwebb-kurser/webgl/me/kmom05/proj/
-
+  
 To build locally, we need a webserver.  
 Instructions (with Servez):  
 - Download and install "Servez" https://github.com/greggman/servez
