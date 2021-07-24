@@ -1,5 +1,7 @@
 # WebGL_Metaballs
-Metaballs in GLSL with Raymarching
+Metaballs in GLSL with Raymarching  
+  
+![Alt text](/src_clicked.png?raw=true "Metaballs") 
   
 To build locally, we need a webserver.  
 Instructions (with Servez):  
@@ -11,6 +13,3 @@ Instructions (with Servez):
 ![Alt text](/servez_folderview.png?raw=true "Folder View")  
 - Click the "/src" folder.  
 - Voilà!  
-![Alt text](/src_clicked.png?raw=true "Metaballs") 
-
-
